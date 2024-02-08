@@ -1,0 +1,18 @@
+.debug{
+    > #site_header{
+    >div{
+        background-color: red;
+    }
+}
+    > #site_main{
+        >div{
+            background-color: green;
+        }
+    }
+
+    > #site_footer{
+        >div{
+            background-color: blue;
+        }
+    }
+}
