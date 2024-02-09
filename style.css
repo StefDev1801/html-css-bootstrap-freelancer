@@ -1,3 +1,12 @@
+/* #region utilities */
+:root{
+    --bootfr-darker:rgba(44, 62, 80, 1);
+    --bootfr-light:rgba(26, 188, 156, 1);
+    --bootfr-dark:rgba(58, 84, 109, 1);
+    --bootfr-lighter:rgba(255, 255, 255, 1);
+}
+
+/* debug */
 .debug{
     > #site_header{
     >div{
@@ -19,26 +28,48 @@
         }
     }
 }
+/* #endregion */
 
-:root{
-    --bootfr-darker:rgba(44, 62, 80, 1);
-    --bootfr-light:rgba(26, 188, 156, 1);
-    --bootfr-dark:rgba(58, 84, 109, 1);
-    --bootfr-lighter:rgba(255, 255, 255, 1);
-}
+
+
+/* #region header */
 #site_header{
     background-color: var(--bootfr-darker);
 }
+/* #endregion */
+
+
+
+/* #region main */
 .start_bootstrap{
     background-color: var(--bootfr-light);
+    color: var(--bootfr-lighter);
 }
 .about{
     background-color: var(--bootfr-light);
 }
+/* #endregion */
+
+
+/* #region footer */
 .info{
     background-color: var(--bootfr-dark);
+    a{
+        color: var(--bootfr-light);
+        text-decoration: none;
+    }
+    .brand_circle{
+        border: 1px solid white;
+        height: 2rem;
+        width: 2rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .copyright{
     background-color: var(--bootfr-darker);
     color: white;
 }
+/* #endregion */
